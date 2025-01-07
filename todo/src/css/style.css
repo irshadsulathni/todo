@@ -43,11 +43,19 @@ main {
     padding: 1.5rem;
 }
 
+/* Badge Section */
+.badge-container {
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;      /* Vertically center */
+  margin-bottom: 1rem;
+}
+
 .badge {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: center;  /* Ensures the content is centered vertically and horizontally */
+  justify-content: center;
   background-color: #00a028;
   color: #fff;
   font-size: 1.2rem;
@@ -56,35 +64,32 @@ main {
   border-radius: 50px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
-  margin-bottom: 1rem;
   max-width: fit-content;
   animation: fadeIn 1s ease-in-out;
-  text-align: center; /* Ensure proper centering for text */
+  text-align: center;
 }
 
-/* Center the icon within the badge */
 .badge img {
   width: 42px;
   height: 42px;
   object-fit: contain;
-  margin-bottom: 0.5rem; /* Add spacing between icon and text */
+  margin-bottom: 0.5rem;
 }
 
 .badge span {
-    display: inline-block;
-    font-size: 1.2rem;
+  display: inline-block;
+  font-size: 1.2rem;
 }
 
-/* Animation for entry */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* New Item Entry Section */
@@ -181,12 +186,14 @@ main {
     padding: 1em 0.5em;
     gap: 1em;
     border-bottom: 1px solid #444;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     position: relative;
+    cursor: pointer;
 }
 
 .item:hover {
     background-color: #3a3a5e;
+    transform: scale(1.02);
 }
 
 .item > input[type="checkbox"] {
@@ -204,7 +211,7 @@ main {
 
 .item > label {
     flex-grow: 1;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .item > button {
