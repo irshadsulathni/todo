@@ -48,7 +48,7 @@ main {
   flex-direction: column; 
   align-items: center;
   justify-content: center;  /* Ensures the content is centered vertically and horizontally */
-  background-color: #81D4FA;
+  background-color: #00a028;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 700;
@@ -69,7 +69,6 @@ main {
   object-fit: contain;
   margin-bottom: 0.5rem; /* Add spacing between icon and text */
 }
-
 
 .badge span {
     display: inline-block;
